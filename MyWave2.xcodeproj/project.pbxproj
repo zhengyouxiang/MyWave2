@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2711020D16E8560300109F7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2711020C16E8560300109F7B /* UIKit.framework */; };
+		2711020F16E8560300109F7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2711020E16E8560300109F7B /* Foundation.framework */; };
+		2711021116E8560300109F7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2711021016E8560300109F7B /* CoreGraphics.framework */; };
+		2711021716E8560300109F7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2711021516E8560300109F7B /* InfoPlist.strings */; };
+		2711021916E8560300109F7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711021816E8560300109F7B /* main.m */; };
+		2711021D16E8560300109F7B /* YSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711021C16E8560300109F7B /* YSAppDelegate.m */; };
+		2711021F16E8560300109F7B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2711021E16E8560300109F7B /* Default.png */; };
+		2711022116E8560300109F7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2711022016E8560300109F7B /* Default@2x.png */; };
+		2711022316E8560300109F7B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2711022216E8560300109F7B /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2711020916E8560300109F7B /* MyWave2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWave2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2711020C16E8560300109F7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2711020E16E8560300109F7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2711021016E8560300109F7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2711021416E8560300109F7B /* MyWave2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyWave2-Info.plist"; sourceTree = "<group>"; };
+		2711021616E8560300109F7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2711021816E8560300109F7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2711021A16E8560300109F7B /* MyWave2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyWave2-Prefix.pch"; sourceTree = "<group>"; };
+		2711021B16E8560300109F7B /* YSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSAppDelegate.h; sourceTree = "<group>"; };
+		2711021C16E8560300109F7B /* YSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSAppDelegate.m; sourceTree = "<group>"; };
+		2711021E16E8560300109F7B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2711022016E8560300109F7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2711022216E8560300109F7B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2711020616E8560300109F7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2711020D16E8560300109F7B /* UIKit.framework in Frameworks */,
+				2711020F16E8560300109F7B /* Foundation.framework in Frameworks */,
+				2711021116E8560300109F7B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2711020016E8560300109F7B = {
+			isa = PBXGroup;
+			children = (
+				2711021216E8560300109F7B /* MyWave2 */,
+				2711020B16E8560300109F7B /* Frameworks */,
+				2711020A16E8560300109F7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2711020A16E8560300109F7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2711020916E8560300109F7B /* MyWave2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2711020B16E8560300109F7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2711020C16E8560300109F7B /* UIKit.framework */,
+				2711020E16E8560300109F7B /* Foundation.framework */,
+				2711021016E8560300109F7B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2711021216E8560300109F7B /* MyWave2 */ = {
+			isa = PBXGroup;
+			children = (
+				2711021B16E8560300109F7B /* YSAppDelegate.h */,
+				2711021C16E8560300109F7B /* YSAppDelegate.m */,
+				2711021316E8560300109F7B /* Supporting Files */,
+			);
+			path = MyWave2;
+			sourceTree = "<group>";
+		};
+		2711021316E8560300109F7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2711021416E8560300109F7B /* MyWave2-Info.plist */,
+				2711021516E8560300109F7B /* InfoPlist.strings */,
+				2711021816E8560300109F7B /* main.m */,
+				2711021A16E8560300109F7B /* MyWave2-Prefix.pch */,
+				2711021E16E8560300109F7B /* Default.png */,
+				2711022016E8560300109F7B /* Default@2x.png */,
+				2711022216E8560300109F7B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2711020816E8560300109F7B /* MyWave2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2711022616E8560300109F7B /* Build configuration list for PBXNativeTarget "MyWave2" */;
+			buildPhases = (
+				2711020516E8560300109F7B /* Sources */,
+				2711020616E8560300109F7B /* Frameworks */,
+				2711020716E8560300109F7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWave2;
+			productName = MyWave2;
+			productReference = 2711020916E8560300109F7B /* MyWave2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2711020116E8560300109F7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = youngsing;
+			};
+			buildConfigurationList = 2711020416E8560300109F7B /* Build configuration list for PBXProject "MyWave2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2711020016E8560300109F7B;
+			productRefGroup = 2711020A16E8560300109F7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2711020816E8560300109F7B /* MyWave2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2711020716E8560300109F7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2711021716E8560300109F7B /* InfoPlist.strings in Resources */,
+				2711021F16E8560300109F7B /* Default.png in Resources */,
+				2711022116E8560300109F7B /* Default@2x.png in Resources */,
+				2711022316E8560300109F7B /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2711020516E8560300109F7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2711021916E8560300109F7B /* main.m in Sources */,
+				2711021D16E8560300109F7B /* YSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2711021516E8560300109F7B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2711021616E8560300109F7B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2711022416E8560300109F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2711022516E8560300109F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2711022716E8560300109F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyWave2/MyWave2-Prefix.pch";
+				INFOPLIST_FILE = "MyWave2/MyWave2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2711022816E8560300109F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyWave2/MyWave2-Prefix.pch";
+				INFOPLIST_FILE = "MyWave2/MyWave2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2711020416E8560300109F7B /* Build configuration list for PBXProject "MyWave2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2711022416E8560300109F7B /* Debug */,
+				2711022516E8560300109F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2711022616E8560300109F7B /* Build configuration list for PBXNativeTarget "MyWave2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2711022716E8560300109F7B /* Debug */,
+				2711022816E8560300109F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2711020116E8560300109F7B /* Project object */;
+}

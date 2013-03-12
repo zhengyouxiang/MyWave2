@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PPRevealSideViewController.h"
+#import "SinaWeibo.h"
 
-@interface YSAppDelegate : UIResponder <UIApplicationDelegate>
+#define myAppKey             @"980205732"
+#define myAppSecret          @"4acd14d8b72b9c29bead0aaabc8c0c46"
+#define myAppRedirectURI     @"https://api.weibo.com/oauth2/default.html"
+
+@interface YSAppDelegate : UIResponder <UIApplicationDelegate, SinaWeiboDelegate, PPRevealSideViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (retain, nonatomic) PPRevealSideViewController* revealSideViewController;
+
+@property (retain, nonatomic) SinaWeibo* sinaweibo;
 
 @end

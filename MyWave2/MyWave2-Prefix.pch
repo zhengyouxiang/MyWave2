@@ -11,4 +11,17 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+
+    #import "WeiboDataManager.h"
+    #import "WeiboConnectManager.h"
+
+#define UIColorWithWhite075100 [UIColor colorWithWhite:0.75f alpha:1.0f]
+#define FontOFHelvetica9 [UIFont fontWithName:@"Helvetica" size:9]
+#define FontOFHelvetica11 [UIFont fontWithName:@"Helvetica" size:11]
+#define FontOFHelvetica12 [UIFont fontWithName:@"Helvetica" size:12]
+#define FontOFHelvetica14 [UIFont fontWithName:@"Helvetica" size:14]
+#define FontOFHelvetica16 [UIFont fontWithName:@"Helvetica" size:16]
+#define FontOFHelveticaBold16 [UIFont fontWithName:@"Helvetica-Bold" size:16]
+
 #endif

@@ -40,7 +40,6 @@ typedef enum StatuseType : NSInteger {
 	NSString        *bmiddlePic; //中型图片
 	NSString        *originalPic; //原始图片
     
-#warning geo unwrite
 //    geo   //地理信息字段
     
     User            *user; //微博作者的用户信息字段信息

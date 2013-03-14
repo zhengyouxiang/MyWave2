@@ -14,6 +14,13 @@
 
 @implementation LeftGroupViewController
 
+- (void)dealloc
+{
+    [groupClassifyArray release], groupClassifyArray = nil;
+    [_tableView release], _tableView = nil;
+    [super dealloc];
+}
+
 - (void)loadView
 {
     [super loadView];
@@ -29,12 +36,30 @@
     UIImageView* imageView = [[[UIImageView alloc] initWithImage:resizeImage] autorelease];
     imageView.frame = CGRectMake(0, 0, 250, [UIScreen mainScreen].bounds.size.height);
     self.tableView.backgroundView = imageView;
+    
+    groupClassifyArray = [[NSMutableArray alloc] init];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    switch (self.dataSourceFlag)
+    {
+        case 0:
+        {
+            [groupClassifyArray addObjectsFromArray:@[@"用户分组，暂无权限 01",  @"用户分组，暂无权限 02",  @"用户分组，暂无权限 03",  @"用户分组，暂无权限 04",  @"用户分组，暂无权限 05",  @"用户分组，暂无权限 06",  @"用户分组，暂无权限 07",  @"用户分组，暂无权限 08", @"用户分组，暂无权限 09"]];
+            break;
+        }
+        case 1:
+        {
+            [groupClassifyArray addObjectsFromArray:@[@"所有人", @"关注的人", @"全部微博", @"原创微博", @"@我的评论"]];
+            break;
+        }
+            
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,7 +77,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 7;
+    return groupClassifyArray.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -71,7 +96,7 @@
                                        reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"用户分组 %d 暂无权限", indexPath.row];
+    cell.textLabel.text = [groupClassifyArray objectAtIndex:indexPath.row];
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.font = FontOFHelveticaBold16;
     

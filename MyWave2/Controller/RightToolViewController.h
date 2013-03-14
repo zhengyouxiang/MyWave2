@@ -10,4 +10,6 @@
 
 @interface RightToolViewController : UIViewController
 
+@property (nonatomic, assign) NSUInteger dataSourceFlag;
+
 @end

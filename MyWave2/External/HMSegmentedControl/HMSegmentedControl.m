@@ -198,7 +198,7 @@
             [CATransaction commit];
         } else {
             // Disable CALayer animations
-            NSMutableDictionary *newActions = [[NSMutableDictionary alloc] initWithObjectsAndKeys:[NSNull null], @"position", [NSNull null], @"bounds", nil];
+            NSMutableDictionary *newActions = [[[NSMutableDictionary alloc] initWithObjectsAndKeys:[NSNull null], @"position", [NSNull null], @"bounds", nil] autorelease];
             self.selectedSegmentLayer.actions = newActions;
             self.selectedSegmentLayer.frame = [self frameForSelectionIndicator];
 

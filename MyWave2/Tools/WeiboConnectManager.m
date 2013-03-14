@@ -34,7 +34,7 @@
 - (void)getDataFromWeiboWithURL: (NSString *)UrlString params: (NSDictionary *)aDic httpMethod: (NSString *)httpMethod
 {
     SinaWeibo *sinaweibo = [self sinaweibo];
-    
+    NSLog(@"%@", UrlString);
     NSMutableDictionary *mutableParams = [NSMutableDictionary dictionaryWithDictionary:aDic];
     [sinaweibo requestWithURL:UrlString
                        params:mutableParams
@@ -59,14 +59,20 @@
 #pragma mark - MyBlock
 - (void)setResultCallbackBlock:(RequestCallbackBasicBlock)block
 {
-    [resultCallbackBlock release];
-    resultCallbackBlock = [block copy];
+    if (resultCallbackBlock != block)
+    {
+        Block_release(resultCallbackBlock);
+        resultCallbackBlock = Block_copy(block);
+    }
 }
 
 - (void)setFailCallbackBlock:(RequestCallbackBasicBlock)block
 {
-    [failCallbackBlock release];
-    failCallbackBlock = [block copy];
+    if (failCallbackBlock != block)
+    {
+        Block_release(failCallbackBlock);
+        failCallbackBlock = Block_copy(block);
+    }
 }
 
 @end

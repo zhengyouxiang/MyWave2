@@ -49,6 +49,8 @@ static WeiboDataManager *weiboDataManager = nil;
                                 @"https://open.weibo.cn/2/comments/show.json",              //1
                                 @"https://open.weibo.cn/2/statuses/repost_timeline.json",   //2
                                 @"https://open.weibo.cn/2/statuses/user_timeline.json",     //3
+                                @"https://open.weibo.cn/2/statuses/mentions.json",          //4
+                                @"https://open.weibo.cn/2/comments/to_me.json",             //5
                                 nil];
     }
     return self;
@@ -76,7 +78,19 @@ static WeiboDataManager *weiboDataManager = nil;
         }
         case 3:
         {
-            [self handleUserTimelineWithRequset:request Data:data];
+            [self handleStatuseWithRequset:request Data:data];
+            break;
+        }
+        case 4:
+        {
+            [self handleHome_TimeLineWithRequest:request Data:data];
+            break;
+        }
+        case 5:
+        {
+            NSLog(@"%@ :::::request.url", request.url);
+            NSLog(@"%@ :::::data", data);
+            [self handleCommentWithRequest:request Data:data];
             break;
         }
         default:
@@ -206,7 +220,7 @@ static WeiboDataManager *weiboDataManager = nil;
     }
 }
 
-- (void)handleUserTimelineWithRequset:(SinaWeiboRequest *)request Data: (NSDictionary *)aDict
+- (void)handleStatuseWithRequset:(SinaWeiboRequest *)request Data: (NSDictionary *)aDict
 {
     if (aDict.count)
     {

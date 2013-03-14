@@ -793,7 +793,7 @@ static const CGFloat MAX_TRIGGER_OFFSET = 100.0;
     _rootViewController.view.layer.shadowOffset = CGSizeZero;
     _rootViewController.view.layer.shadowOpacity = 0.75f;
     _rootViewController.view.layer.shadowRadius = 10.0f;
-    _rootViewController.view.layer.shadowColor = [UIColor whiteColor].CGColor;
+    _rootViewController.view.layer.shadowColor = [UIColor clearColor].CGColor;
     _rootViewController.view.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.view.layer.bounds].CGPath;
     _rootViewController.view.clipsToBounds = NO;
 }

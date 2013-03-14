@@ -75,12 +75,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    LeftGroupViewController* leftGroupVC = [[[LeftGroupViewController alloc] init] autorelease];
-    [self.revealSideViewController preloadViewController:leftGroupVC forSide:PPRevealSideDirectionLeft];
-    
-    RightToolViewController* rightToolVC = [[[RightToolViewController alloc] init] autorelease];
-    [self.revealSideViewController preloadViewController:rightToolVC forSide:PPRevealSideDirectionRight];
 }
 
 - (void)didReceiveMemoryWarning
@@ -165,15 +159,19 @@
     if (sender.tag == self.selectedIndex)
         return;
     
+    CATransition* animation = [CATransition animation];
+    animation.duration = 0.5f;
+    animation.timingFunction = UIViewAnimationCurveEaseInOut;
+    animation.type = @"cube";
+    if (self.selectedIndex < sender.tag)
+        animation.subtype = kCATransitionFromRight;
+    else
+        animation.subtype = kCATransitionFromLeft;
+    [self.tabBar exchangeSubviewAtIndex:self.selectedIndex withSubviewAtIndex:sender.tag];
     self.selectedIndex = sender.tag;
-    
-    [UIView animateWithDuration:0.3 animations:^{
-        backgroundTabBarButtonView.alpha = 0.0f;
-        backgroundTabBarButtonView.frame = CGRectMake(64 * sender.tag, 0, 64, 45);
-        backgroundTabBarButtonView.alpha = 1.0f;
-        
-        sliderLabel.frame = CGRectMake(64 * sender.tag, 0, 64, 4);
-    }];
+    backgroundTabBarButtonView.frame = CGRectMake(64 * sender.tag, 0, 64, 45);
+    sliderLabel.frame = CGRectMake(64 * sender.tag, 0, 64, 4);
+    [[self.view layer] addAnimation:animation forKey:@"animation"];
 }
 
 @end

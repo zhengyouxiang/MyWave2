@@ -141,7 +141,7 @@ typedef enum {
         }
         
         if (_imageName) {
-            UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(-5, -25, 64, 64)];
+            UIImageView *iv = [[[UIImageView alloc] initWithFrame:CGRectMake(-5, -25, 64, 64)] autorelease];
             [self.layer addSublayer:iv.layer];
             iv.image = [UIImage imageNamed:_imageName];
         }

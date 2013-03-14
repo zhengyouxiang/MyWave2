@@ -13,6 +13,9 @@
 #import "MainPageRetweetedImageCell.h"
 #import "Reachability.h"
 #import "CommentView.h"
+#import "PPRevealSideViewController.h"
+#import "LeftGroupViewController.h"
+#import "RightToolViewController.h"
 
 @interface MainPageViewController : UIViewController <EGORefreshTableHeaderDelegate, OHAttributedLabelDelegate, MyCellDelegate, UITableViewDataSource, UITableViewDelegate>
 {
@@ -22,8 +25,11 @@
     UILabel *loadingLabel;
     NetworkStatus nowNewWorkStatus;
 //    CommentView *commentView;
+    NSString* requestURL;
 }
 
 @property (retain, nonatomic) UITableView *tableView;
+
+- (void)refreshData: (BOOL)isNew;
 
 @end

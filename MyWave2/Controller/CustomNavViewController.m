@@ -17,10 +17,7 @@
 - (void)loadView
 {
     [super loadView];
-    self.navigationBar.tintColor = [UIColor colorWithWhite:0.75f alpha:1.0f];
-    UIImageView* shadowView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"shadow_compose.png"]] autorelease];
-    shadowView.frame = CGRectMake(0, 44, 320, 10);
-    [self.navigationBar addSubview:shadowView];
+    self.navigationBarHidden = YES;
 }
 
 - (void)viewDidLoad

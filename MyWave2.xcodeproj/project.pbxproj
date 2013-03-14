@@ -735,7 +735,6 @@
 		2711097116E8838F00109F7B /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711096F16E8838F00109F7B /* MainPageViewController.m */; };
 		2711097416E883AF00109F7B /* MainPageNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711097316E883AF00109F7B /* MainPageNavViewController.m */; };
 		2711097C16E885A000109F7B /* PPRevealSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711097B16E885A000109F7B /* PPRevealSideViewController.m */; };
-		2711098116E886F600109F7B /* SquarePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711098016E886F600109F7B /* SquarePageViewController.m */; };
 		2711099816E8873700109F7B /* DetailPageCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711098616E8873700109F7B /* DetailPageCommentCell.m */; };
 		2711099916E8873700109F7B /* MainPageBasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711098816E8873700109F7B /* MainPageBasicCell.m */; };
 		2711099A16E8873700109F7B /* MainPageBasicImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711098A16E8873700109F7B /* MainPageBasicImageCell.m */; };
@@ -747,7 +746,6 @@
 		271109A016E8873700109F7B /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2711099716E8873700109F7B /* ImageView.m */; };
 		271109A516E8874100109F7B /* WeiboDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 271109A216E8874100109F7B /* WeiboDataManager.m */; };
 		271109B316E8C02100109F7B /* MessagePageNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271109B216E8C02100109F7B /* MessagePageNavViewController.m */; };
-		271109B616E8C03200109F7B /* MessagePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271109B516E8C03200109F7B /* MessagePageViewController.m */; };
 		271109B916E8C08500109F7B /* PersonalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271109B816E8C08500109F7B /* PersonalPageViewController.m */; };
 		271109BC16E8C09500109F7B /* PersonalPageNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271109BB16E8C09500109F7B /* PersonalPageNavViewController.m */; };
 		271109BF16E8C10F00109F7B /* UpdateStatusesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271109BE16E8C10F00109F7B /* UpdateStatusesController.m */; };
@@ -756,6 +754,8 @@
 		271109CB16E8C42A00109F7B /* bg0.png in Resources */ = {isa = PBXBuildFile; fileRef = 271109C916E8C42A00109F7B /* bg0.png */; };
 		271109CC16E8C42A00109F7B /* bg0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 271109CA16E8C42A00109F7B /* bg0@2x.png */; };
 		27432D3516E971FF00E63040 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 271108D616E85E7900109F7B /* libSDWebImage.a */; };
+		274A435416EF4B16003CF201 /* SquarePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274A435316EF4B16003CF201 /* SquarePageViewController.m */; };
+		274A435716EF4B2D003CF201 /* MessagePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274A435616EF4B2D003CF201 /* MessagePageViewController.m */; };
 		277B21E516ECB164001F13BE /* updateButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 277B21E316ECB164001F13BE /* updateButton.png */; };
 		277B21E616ECB164001F13BE /* updateButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 277B21E416ECB164001F13BE /* updateButton@2x.png */; };
 		277B21EB16ECB305001F13BE /* button_icon_ok_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 277B21E916ECB305001F13BE /* button_icon_ok_1.png */; };
@@ -1568,8 +1568,6 @@
 		2711097316E883AF00109F7B /* MainPageNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageNavViewController.m; sourceTree = "<group>"; };
 		2711097A16E885A000109F7B /* PPRevealSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRevealSideViewController.h; sourceTree = "<group>"; };
 		2711097B16E885A000109F7B /* PPRevealSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRevealSideViewController.m; sourceTree = "<group>"; };
-		2711097F16E886F600109F7B /* SquarePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquarePageViewController.h; sourceTree = "<group>"; };
-		2711098016E886F600109F7B /* SquarePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquarePageViewController.m; sourceTree = "<group>"; };
 		2711098516E8873700109F7B /* DetailPageCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPageCommentCell.h; sourceTree = "<group>"; };
 		2711098616E8873700109F7B /* DetailPageCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPageCommentCell.m; sourceTree = "<group>"; };
 		2711098716E8873700109F7B /* MainPageBasicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageBasicCell.h; sourceTree = "<group>"; };
@@ -1593,8 +1591,6 @@
 		271109A216E8874100109F7B /* WeiboDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboDataManager.m; sourceTree = "<group>"; };
 		271109B116E8C02100109F7B /* MessagePageNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePageNavViewController.h; sourceTree = "<group>"; };
 		271109B216E8C02100109F7B /* MessagePageNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePageNavViewController.m; sourceTree = "<group>"; };
-		271109B416E8C03200109F7B /* MessagePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePageViewController.h; sourceTree = "<group>"; };
-		271109B516E8C03200109F7B /* MessagePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePageViewController.m; sourceTree = "<group>"; };
 		271109B716E8C08500109F7B /* PersonalPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalPageViewController.h; sourceTree = "<group>"; };
 		271109B816E8C08500109F7B /* PersonalPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalPageViewController.m; sourceTree = "<group>"; };
 		271109BA16E8C09500109F7B /* PersonalPageNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalPageNavViewController.h; sourceTree = "<group>"; };
@@ -1606,6 +1602,10 @@
 		271109C716E8C3FA00109F7B /* my_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_login.png; sourceTree = "<group>"; };
 		271109C916E8C42A00109F7B /* bg0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg0.png; sourceTree = "<group>"; };
 		271109CA16E8C42A00109F7B /* bg0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg0@2x.png"; sourceTree = "<group>"; };
+		274A435216EF4B16003CF201 /* SquarePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquarePageViewController.h; sourceTree = "<group>"; };
+		274A435316EF4B16003CF201 /* SquarePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquarePageViewController.m; sourceTree = "<group>"; };
+		274A435516EF4B2D003CF201 /* MessagePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePageViewController.h; sourceTree = "<group>"; };
+		274A435616EF4B2D003CF201 /* MessagePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePageViewController.m; sourceTree = "<group>"; };
 		277B21E316ECB164001F13BE /* updateButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = updateButton.png; sourceTree = "<group>"; };
 		277B21E416ECB164001F13BE /* updateButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "updateButton@2x.png"; sourceTree = "<group>"; };
 		277B21E916ECB305001F13BE /* button_icon_ok_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_icon_ok_1.png; sourceTree = "<group>"; };
@@ -2639,8 +2639,8 @@
 				2711097D16E886CE00109F7B /* Detail */,
 				271109B116E8C02100109F7B /* MessagePageNavViewController.h */,
 				271109B216E8C02100109F7B /* MessagePageNavViewController.m */,
-				271109B416E8C03200109F7B /* MessagePageViewController.h */,
-				271109B516E8C03200109F7B /* MessagePageViewController.m */,
+				274A435516EF4B2D003CF201 /* MessagePageViewController.h */,
+				274A435616EF4B2D003CF201 /* MessagePageViewController.m */,
 			);
 			path = MessagePageViewController;
 			sourceTree = "<group>";
@@ -2675,8 +2675,8 @@
 				2711097E16E886F600109F7B /* Detail */,
 				271109C316E8C1EE00109F7B /* SquarePageNavViewController.h */,
 				271109C416E8C1EE00109F7B /* SquarePageNavViewController.m */,
-				2711097F16E886F600109F7B /* SquarePageViewController.h */,
-				2711098016E886F600109F7B /* SquarePageViewController.m */,
+				274A435216EF4B16003CF201 /* SquarePageViewController.h */,
+				274A435316EF4B16003CF201 /* SquarePageViewController.m */,
 			);
 			path = SquarePageViewController;
 			sourceTree = "<group>";
@@ -3598,7 +3598,6 @@
 				2711097116E8838F00109F7B /* MainPageViewController.m in Sources */,
 				2711097416E883AF00109F7B /* MainPageNavViewController.m in Sources */,
 				2711097C16E885A000109F7B /* PPRevealSideViewController.m in Sources */,
-				2711098116E886F600109F7B /* SquarePageViewController.m in Sources */,
 				2711099816E8873700109F7B /* DetailPageCommentCell.m in Sources */,
 				2711099916E8873700109F7B /* MainPageBasicCell.m in Sources */,
 				2711099A16E8873700109F7B /* MainPageBasicImageCell.m in Sources */,
@@ -3610,7 +3609,6 @@
 				271109A016E8873700109F7B /* ImageView.m in Sources */,
 				271109A516E8874100109F7B /* WeiboDataManager.m in Sources */,
 				271109B316E8C02100109F7B /* MessagePageNavViewController.m in Sources */,
-				271109B616E8C03200109F7B /* MessagePageViewController.m in Sources */,
 				271109B916E8C08500109F7B /* PersonalPageViewController.m in Sources */,
 				271109BC16E8C09500109F7B /* PersonalPageNavViewController.m in Sources */,
 				271109BF16E8C10F00109F7B /* UpdateStatusesController.m in Sources */,
@@ -3621,6 +3619,8 @@
 				277B21F416ECB3BD001F13BE /* Comment.m in Sources */,
 				277B21F516ECB3BD001F13BE /* Status.m in Sources */,
 				277B21F616ECB3BD001F13BE /* User.m in Sources */,
+				274A435416EF4B16003CF201 /* SquarePageViewController.m in Sources */,
+				274A435716EF4B2D003CF201 /* MessagePageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

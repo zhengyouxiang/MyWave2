@@ -7,7 +7,6 @@
 //
 
 #import "MainPageViewController.h"
-#import "PPRevealSideViewController.h"
 #import "Status.h"
 #import "User.h"
 #import <SDWebImage/UIImageView+WebCache.h>
@@ -55,11 +54,11 @@ static BOOL isHaveCommentView = NO;
 
 - (void)loadView
 {
-    self.navigationController.navigationBarHidden = YES;
-    
     [super loadView];
     
     [self createHeaderView];
+    
+    requestURL = @"statuses/home_timeline.json";
     
     self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(0, 40, 320, [UIScreen mainScreen].bounds.size.height - 20 - 40 - 45)] autorelease];
     self.tableView.delegate = self;
@@ -179,7 +178,7 @@ static BOOL isHaveCommentView = NO;
         cell.textLabel.text = @"加载中，请稍后...";
         cell.textLabel.textAlignment = UITextAlignmentCenter;
         
-        [[WeiboManager share] getDataFromWeibo:@"statuses/home_timeline.json" WithHttpMethod:@"GET"];
+        [[WeiboManager share] getDataFromWeibo:requestURL WithHttpMethod:@"GET"];
         
         return cell;
     }
@@ -263,8 +262,8 @@ static BOOL isHaveCommentView = NO;
                                            reuseIdentifier:MainPageLoadingCell] autorelease];
         }
         
-        static BOOL firstLoading = YES;
-        if (firstLoading)
+//        static BOOL firstLoading = YES;
+//        if (firstLoading)
         {
             WeiboConnectManager *weiboM = [WeiboConnectManager new];
             [weiboM setResultCallbackBlock:^(SinaWeiboRequest *request, id obj) {
@@ -273,10 +272,10 @@ static BOOL isHaveCommentView = NO;
                 [loadingLabel removeFromSuperview];
             }];
             
-            [weiboM getDataFromWeiboWithURL:@"statuses/home_timeline.json"
+            [weiboM getDataFromWeiboWithURL:requestURL
                                      params:nil
                                  httpMethod:@"GET"];
-            firstLoading = NO;;
+//            firstLoading = NO;
         }
         
         return cell;
@@ -762,7 +761,7 @@ static BOOL isHaveCommentView = NO;
     
 //    Status *lastStatus = [statusesArray objectAtIndex:0];
 //    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:lastStatus.statusStr, @"since_id", nil];
-    [weiboM getDataFromWeiboWithURL:@"statuses/home_timeline.json" params:nil httpMethod:@"GET"];
+    [weiboM getDataFromWeiboWithURL:requestURL params:nil httpMethod:@"GET"];
 }
 
 - (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view
@@ -909,11 +908,21 @@ static BOOL isHaveCommentView = NO;
 
 - (void)groupButtonAction: (id)sender
 {
-    [self.revealSideViewController pushOldViewControllerOnDirection:PPRevealSideDirectionLeft withOffset:70.0f animated:YES];
+    LeftGroupViewController* mainLeftGroupVC = [[[LeftGroupViewController alloc] init] autorelease];
+    mainLeftGroupVC.dataSourceFlag = 0;
+    [self.revealSideViewController pushViewController:mainLeftGroupVC
+                                          onDirection:PPRevealSideDirectionLeft
+                                           withOffset:70.0f
+                                             animated:YES
+                                           completion:^{
+                                               ;
+                                           }];
 }
 
 - (void)toolButtonAction: (id)sender
 {
+    //与controller的联动存在bug，动画块暂时注释
+    /*
     static BOOL updateButtonTappedAgain = NO;
     
     UIButton *toolButton = (UIButton *)[self.navigationController.view viewWithTag:1000];
@@ -934,8 +943,17 @@ static BOOL isHaveCommentView = NO;
             updateButtonTappedAgain = NO;
         }];
     }
+     */
     
-    [self.revealSideViewController pushOldViewControllerOnDirection:PPRevealSideDirectionRight withOffset:276.0f animated:YES];
+    RightToolViewController* mainRightToolVC = [[[RightToolViewController alloc] init] autorelease];
+    mainRightToolVC.dataSourceFlag = 0;
+    [self.revealSideViewController pushViewController:mainRightToolVC
+                                          onDirection:PPRevealSideDirectionRight
+                                           withOffset:276.0f
+                                             animated:YES
+                                           completion:^{
+                                               ;
+                                           }];
 }
 
 - (void)imageTappedActionWithStatusCell: (id)cell
@@ -1028,7 +1046,7 @@ static BOOL isHaveCommentView = NO;
     
     Status *firstStatus = [statusesArray lastObject];
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:firstStatus.statusStr, @"max_id", @"21", @"count", nil];
-    [weiboM getDataFromWeiboWithURL:@"statuses/home_timeline.json"
+    [weiboM getDataFromWeiboWithURL:requestURL
                              params:dict
                          httpMethod:@"GET"];
 }

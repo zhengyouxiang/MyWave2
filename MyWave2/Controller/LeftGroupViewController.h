@@ -13,6 +13,7 @@
     NSMutableArray *groupClassifyArray;
 }
 
-@property (retain, nonatomic) UITableView* tableView;
+@property (nonatomic, retain) UITableView* tableView;
+@property (nonatomic, assign) NSUInteger dataSourceFlag;
 
 @end
